@@ -1,0 +1,13 @@
+
+All members:
+curl -u $GITHUB_USER:$GITHUB_PWD https://api.github.com/orgs/jbosstools/members 
+
+Filtered:
+ curl -u $GITHUB_USER:$GITHUB_PWD https://api.github.com/orgs/jbosstools/members | grep -v jboss-jira-hook | grep login | sed -e 's/"login": "\(.*\)",/\1/g'
+
+create team
+curl -u $GITHUB_USER:$GITHUB_PWD -X POST -d  { "name": "name" }  https://api.github.com/orgs/jbdevstudio/teams
+
+
+create all teams:
+find *.team | sed -e 's/.team//g' | xargs -n 1 -I {} curl -u $GITHUB_USER:$GITHUB_PWD -X POST -d  '{ "name": "{}" }'  https://api.github.com/orgs/jbdevstudio/teams
