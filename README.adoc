@@ -1,8 +1,8 @@
-= Team Management for git repositories
+= Team Management for my git organizations
 
 Despite it being pretty nice, it is still a chore to manually setup
 and maintain team members in github ui.
 
 This repository have team members in <teamname>.team files which then
 can be easily added to a team - making it and possible for others to make pullrequests
-to add team members.
+to add/remove team members.
