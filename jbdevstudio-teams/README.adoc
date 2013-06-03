@@ -1,18 +1,18 @@
 == Special teams
 
 . link::[Owners.team] - those that can adjust everything on a team including billing information.
-. link::[pullonly.team] - those that can pull from all repositories.
+. link::[pullonly.team] - users in here can pull from all repositories.
 
 == Repository teams
 
 Each repository has one team which can both pull & push to the same repository with same name as the team.
 
-. link::[devstudio-ci.team] 
-. link::[devstudio-qe.team]
-. link::[devstudio-artwork.team]
-. link::[devstudio-website.team]
-. link::[devstudio-devdoc.team]
-. link::[devstudio-product.team]
+. link::[jbdevstudio-ci.team] 
+. link::[jbdevstudio-qe.team]
+. link::[jbdevstudio-artwork.team]
+. link::[jbdevstudio-website.team]
+. link::[jbdevstudio-devdoc.team]
+. link::[jbdevstudio-product.team]
 
 
 
