@@ -1,3 +1,10 @@
+== Guide for users
+
+If you have been told to get pullacces to jbdevstudio repositories create a pull-request against this repository, 
+adding your username to the teams you should be part of.
+
+Most just needs to be added to pullonly.team to be able to clone the project.
+
 == Special teams
 
 . link::[Owners.team] - those that can adjust everything on a team including billing information.
@@ -13,13 +20,6 @@ Each repository has one team which can both pull & push to the same repository w
 . link::[jbdevstudio-website.team]
 . link::[jbdevstudio-devdoc.team]
 . link::[jbdevstudio-product.team]
-
-== Guide for users
-
-If you have been told to get pullacces to jbdevstudio repositories create a pull-request against this repository, 
-adding your username to the teams you should be part of.
-
-Most just needs to be added to pullonly.team to be able to clone the project.
 
 == Guide for how to setup/update users
 
