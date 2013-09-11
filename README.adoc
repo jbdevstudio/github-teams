@@ -1,4 +1,3 @@
-
 = Team Management for git organizations
 
 Despite it being pretty nice, it is still a chore to manually setup
@@ -8,3 +7,18 @@ This repository have team members in <teamname>.team files which then
 can be easily added to a team - making it and possible for others to make pullrequests
 to add/remove team members.
 
+= Team management for jira
+
+As a shortcut for adding dev, qe, etc. to jira there are two scripts:
+
+   `addtodev.sh` - adds first argument user to relevant jira groups as an employee working in development
+   `addtoqa.sh` - adds  first argument user to relevant jira groups as an employee working in QE
+
+To use this you need to install https://bobswift.atlassian.net/wiki/display/JCLI/JIRA+Command+Line+Interface[Jira CLI]
+and setup `jira` to know about your username, password and jira instance.
+
+This is done the simplest by editing the `jira.sh` command in the CLI distribution to include something like this:
+
+`--server https://issues.jboss.org --user maxandersen --password secret`
+
+Note: to add user to groups in jira you must have jira administrator rights.
