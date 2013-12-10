@@ -29,7 +29,7 @@ You need to be a owner of the repositories to run these successfully.
    $ export GITHUB_USER=<githubusername>
    $ export GITHUB_PWD=<githubpwd>
    $ <do changes/checkout pullrequest for the .team files>
-   $ sh ./syncmember.sh
+   $ sh ./addmembers.sh
    
 This will use the github API to check all users are present and add those not found. 
 
