@@ -23,7 +23,7 @@ Each repository has one team which can both pull & push to the same repository w
 
 == Guide for how to setup/update users
 
-The link::[syncmember.sh] is what does the magic.
+The link::[addmembers.sh] is what does the magic.
 You need to be a owner of the repositories to run these successfully.
 
    $ export GITHUB_USER=<githubusername>
@@ -36,7 +36,7 @@ This will use the github API to check all users are present and add those not fo
 It will *not* remove users, but it will print out a warning about users already added that was not in the .team file.
 If such user is found and he need to be removed use github website to remove the user.
 
-During the run `syncmember.sh` will sort the .team files and this will cause a diff if the pullrequest did not add its users alphabetically - 
+When run, link::[addmembers.sh] will sort the .team files and this will cause a diff if the pullrequest did not add its users alphabetically - 
 this is just fine and an expected diff which is simplest just to commit so the ordering stays consistent.
 
 
