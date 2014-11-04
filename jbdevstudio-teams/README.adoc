@@ -1,29 +1,29 @@
 == Guide for users
 
-If you have been told to get pullacces to jbdevstudio repositories create a pull-request against this repository, 
-adding your username to the teams you should be part of.
+To gain read (or write) access to the jbdevstudio repositories, create a pull request against this repository, 
+adding your username to the teams you should be part of. 
 
-Most just needs to be added to pullonly.team to be able to clone the project.
+Unless you need write access, you will likely only need to add yourself to the link:pullonly.team[] file.
 
 == Special teams
 
-. link::[Owners.team] - those that can adjust everything on a team including billing information.
-. link::[pullonly.team] - users in here can pull from all repositories.
+. link:Owners.team[] - users that can adjust everything on a team including billing information
+. link:pullonly.team[] - users with pull (read) access to all repositories
 
 == Repository teams
 
 Each repository has one team which can both pull & push to the same repository with same name as the team.
 
-. link::[jbdevstudio-ci.team] 
-. link::[jbdevstudio-qe.team]
-. link::[jbdevstudio-artwork.team]
-. link::[jbdevstudio-website.team]
-. link::[jbdevstudio-devdoc.team]
-. link::[jbdevstudio-product.team]
+. link:jbdevstudio-ci.team[]
+. link:jbdevstudio-qe.team[]
+. link:jbdevstudio-artwork.team[]
+. link:jbdevstudio-website.team[]
+. link:jbdevstudio-devdoc.team[]
+. link:jbdevstudio-product.team[]
 
 == Guide for how to setup/update users
 
-The link::[syncmember.sh] is what does the magic.
+The link:addmembers.sh[] is what does the magic.
 You need to be a owner of the repositories to run these successfully.
 
    $ export GITHUB_USER=<githubusername>
@@ -36,11 +36,5 @@ This will use the github API to check all users are present and add those not fo
 It will *not* remove users, but it will print out a warning about users already added that was not in the .team file.
 If such user is found and he need to be removed use github website to remove the user.
 
-During the run `syncmember.sh` will sort the .team files and this will cause a diff if the pullrequest did not add its users alphabetically - 
+When run, link:addmembers.sh[] will sort the .team files and this will cause a diff if the pullrequest did not add its users alphabetically - 
 this is just fine and an expected diff which is simplest just to commit so the ordering stays consistent.
-
-
-
-
-
-
