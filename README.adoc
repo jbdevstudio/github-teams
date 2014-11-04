@@ -1,10 +1,7 @@
 = Team Management for git organizations
 
-Despite it being pretty nice, it is still a chore to manually setup
-and maintain team members in github ui.
-
-This repository have team members in <teamname>.team files which then
-can be easily added to a team - making it and possible for others to make pullrequests
+This repository has team members in <teamname>.team files which then
+can be easily added to a team - making it and possible for others to make link:jbdevstudio-teams/README.adoc[pull requests]
 to add/remove team members.
 
 = Team management for jira
